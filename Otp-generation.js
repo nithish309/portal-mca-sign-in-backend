@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 
 dotenv.config();
-
+const router = express.Router();
 const otpStore = {};
 
 router.post("/send-otp", async (req, res) => {
