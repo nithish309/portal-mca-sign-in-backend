@@ -1,16 +1,9 @@
 import express from "express";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
-import cors from "cors";
 
 dotenv.config();
 
-const router = express.Router();
-router.use(cors({
-  origin: "https://mca-portal.vercel.app", 
-  methods: ["GET", "POST"],
-  credentials: true,
-}));
 const otpStore = {};
 
 router.post("/send-otp", async (req, res) => {
