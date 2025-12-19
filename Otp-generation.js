@@ -7,7 +7,7 @@ dotenv.config();
 
 const router = express.Router();
 router.use(cors({
-  origin: "https://mca-portal.vercel.app/", 
+  origin: "https://mca-portal.vercel.app", 
   methods: ["GET", "POST"],
   credentials: true,
 }));
